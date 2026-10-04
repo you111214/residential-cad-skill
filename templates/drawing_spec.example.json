@@ -1,0 +1,203 @@
+{
+  "version": "1.0",
+  "unit": "mm",
+  "title": "住宅测绘平面图（示例）",
+  "coordinate_reference": "wall_centerline",
+  "confirmed": true,
+  "walls": [
+    {
+      "id": "W1",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        6200,
+        0
+      ],
+      "thickness": 200,
+      "kind": "exterior"
+    },
+    {
+      "id": "W2",
+      "start": [
+        6200,
+        0
+      ],
+      "end": [
+        6200,
+        4200
+      ],
+      "thickness": 200,
+      "kind": "exterior"
+    },
+    {
+      "id": "W3",
+      "start": [
+        6200,
+        4200
+      ],
+      "end": [
+        0,
+        4200
+      ],
+      "thickness": 200,
+      "kind": "exterior"
+    },
+    {
+      "id": "W4",
+      "start": [
+        0,
+        4200
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "thickness": 200,
+      "kind": "exterior"
+    },
+    {
+      "id": "W5",
+      "start": [
+        3100,
+        0
+      ],
+      "end": [
+        3100,
+        4200
+      ],
+      "thickness": 100,
+      "kind": "interior"
+    }
+  ],
+  "doors": [
+    {
+      "id": "D1",
+      "wall_id": "W1",
+      "offset": 800,
+      "width": 900,
+      "hinge": "start",
+      "swing_side": "left"
+    },
+    {
+      "id": "D2",
+      "wall_id": "W5",
+      "offset": 1000,
+      "width": 800,
+      "hinge": "start",
+      "swing_side": "right"
+    }
+  ],
+  "columns": [
+    {
+      "origin": [
+        5800,
+        3800
+      ],
+      "width": 300,
+      "depth": 300
+    }
+  ],
+  "rooms": [
+    {
+      "name": "房间一",
+      "label_position": [
+        1550,
+        2700
+      ],
+      "dimensions": [
+        {
+          "start": [
+            100,
+            3200
+          ],
+          "end": [
+            3050,
+            3200
+          ],
+          "value": 2950,
+          "offset": -300,
+          "source": "示例测量值"
+        },
+        {
+          "start": [
+            500,
+            100
+          ],
+          "end": [
+            500,
+            4100
+          ],
+          "value": 4000,
+          "offset": 300,
+          "source": "示例测量值"
+        }
+      ]
+    },
+    {
+      "name": "房间二",
+      "label_position": [
+        4650,
+        2700
+      ],
+      "dimensions": [
+        {
+          "start": [
+            3150,
+            3200
+          ],
+          "end": [
+            6100,
+            3200
+          ],
+          "value": 2950,
+          "offset": -300,
+          "source": "示例测量值"
+        },
+        {
+          "start": [
+            5700,
+            100
+          ],
+          "end": [
+            5700,
+            3700
+          ],
+          "value": 3600,
+          "offset": 350,
+          "source": "示例测量值"
+        }
+      ]
+    }
+  ],
+  "overall_dimensions": [
+    {
+      "start": [
+        -100,
+        -100
+      ],
+      "end": [
+        6300,
+        -100
+      ],
+      "value": 6400,
+      "offset": -550,
+      "source": "示例外墙外边线测量值"
+    },
+    {
+      "start": [
+        6300,
+        -100
+      ],
+      "end": [
+        6300,
+        4300
+      ],
+      "value": 4400,
+      "offset": -550,
+      "source": "示例外墙外边线测量值"
+    }
+  ],
+  "unconfirmed_dimensions": []
+}
